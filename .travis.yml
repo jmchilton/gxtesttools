@@ -15,8 +15,8 @@ language: java
 install:
  - virtualenv planemo-venv
  - . planemo-venv/bin/activate
- - pip install git://github.com/jmchilton/planemo.git
- - planemo travis_init
+ - pip install git+https://github.com/jmchilton/planemo.git
+ - planemo travis_before_install
 
 script:
  - . planemo-venv/bin/activate
